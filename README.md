@@ -7,7 +7,10 @@
 
 <p align="center">
   <a href="https://q-sat-ai.up.railway.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Live_Demo-Visit%20Site-brightgreen?style=for-the-badge&logo=world" alt="Live Demo">
+    <img src="https://img.shields.io/badge/Live_Demo-Railway_App-brightgreen?style=for-the-badge&logo=railway" alt="Railway Live Demo">
+  </a>
+  <a href="https://q-sat-ai.onrender.com/" target="_blank">
+    <img src="https://img.shields.io/badge/Live_Demo-Render_App-brightgreen?style=for-the-badge&logo=render" alt="Render Live Demo">
   </a>
   <a href="LICENSE" target="_blank">
     <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=github" alt="MIT License">
