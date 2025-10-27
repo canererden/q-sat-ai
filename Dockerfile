@@ -1,28 +1,18 @@
-# 1. Temel imaj olarak resmi Python 3.10 slim versiyonunu kullan
-FROM python:3.10-slim
+# Python 3.11 tabanlı minimal imaj
+FROM python:3.11-slim
 
-# 2. Çalışma dizinini /app olarak ayarla
+# Çalışma dizini
 WORKDIR /app
 
-# 3. Logların ve çıktıların doğrudan görünmesi için ayarlar
-ENV PYTHONUNBUFFERED=1
-ENV PYTHONDONTWRITEBYTECODE=1
-
-# 4. Önce sadece gereksinimler dosyasını kopyala ve kur
-#    Bu sayede, kod değiştiğinde kütüphaneler tekrar kurulmaz (Docker cache)
+# Gereksinimleri yükle
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 5. Projenin geri kalan tüm dosyalarını kopyala
-#    (app.py, static/, templates/, trained_models/ vb.)
+# Tüm dosyaları kopyala
 COPY . .
-# Declare PORT as build argument so Railway can inject it
-ARG PORT
-ENV PORT=${PORT:-8080}
-# Expose the port
-EXPOSE $PORT
-# 6. Uygulamayı çalıştıracak komut
-#    Railway, $PORT adında bir ortam değişkeni sağlar.
-#    Gunicorn'a 0.0.0.0 adresinden bu PORT'u dinlemesini söylüyoruz.
-#    'app:app', app.py dosyasındaki 'app' isimli Flask objesini hedefler.
-CMD ["gunicorn", "--bind", "0.0.0.0:$PORT", "app:app"]
+
+# Railway Flask uygulamaları için PORT değişkeni kullanır
+ENV PORT=5000
+
+# Flask uygulamasını başlat
+CMD ["python", "app.py"]
