@@ -5,3 +5,4 @@ scikit-learn==1.6.1
 joblib==1.4.2
 scipy==1.15.3
 gunicorn
+xgboost==3.1.1
