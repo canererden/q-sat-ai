@@ -16,7 +16,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 5. Projenin geri kalan tüm dosyalarını kopyala
 #    (app.py, static/, templates/, trained_models/ vb.)
 COPY . .
-
+# Declare PORT as build argument so Railway can inject it
+ARG PORT
+ENV PORT=${PORT:-8080}
+# Expose the port
+EXPOSE $PORT
 # 6. Uygulamayı çalıştıracak komut
 #    Railway, $PORT adında bir ortam değişkeni sağlar.
 #    Gunicorn'a 0.0.0.0 adresinden bu PORT'u dinlemesini söylüyoruz.
