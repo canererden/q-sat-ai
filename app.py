@@ -58,7 +58,7 @@ feature_info = {
     "Interview Duration": {
         "label": "Interview Duration",
         "tooltip": "Longer interviews yield more data per participant.",
-        "options": [("10", "More than 2 hours (10)"), ("20", "Less than 1 hour (20)")]
+        "options": [("10", "More than 2 hours (10)"), ("15", "1-2 hours (15)"), ("20", "Less than 1 hour (20)")]
     },
     "Observation Duration": {
         "label": "Observation Duration",
