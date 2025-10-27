@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Qualitative Data Saturation Estimation using AI</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <i class="fas fa-chart-line me-2"></i>
+                Qualitative Data Saturation Estimation using AI
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link hover:underline" href="{{ url_for('index') }}">Home</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto mt-10 mb-10">
+        <div class="bg-white p-8 rounded-2xl shadow-md">
+
+            <!-- Card Header -->
+            <div class="border-b-2 border-gray-100 pb-4 mb-6">
+                <h2 class="text-2xl font-bold text-center text-blue-700">
+                    About the System
+                </h2>
+            </div>
+
+
+
+            <!-- Card Body -->
+            <div class="card-body">
+                <!-- Project Attribution -->
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">TUBITAK Project</h4>
+                    <p class="text-gray-700">
+                        This web application is a scientific output of a TÜBİTAK-funded research project conducted under
+                        the ARDEB program (Project Code: 124K233). The project is led by Principal Investigator
+                        <strong>Hasan TUTAR</strong> and aims to develop intelligent tools that support methodological
+                        decisions in qualitative research.
+                    </p>
+                </div>
+
+                <!-- Project Purpose -->
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Project Purpose</h4>
+                    <p class="text-gray-700">
+                        Q-Sat AI (Qualitative Data Saturation Estimation using AI) is an AI-supported prediction tool
+                        developed to determine the
+                        optimal sample size in qualitative research. The system guides researchers
+                        using advanced machine learning models trained on 3000+ qualitative research data points.
+                    </p>
+                </div>
+
+
+                <!-- Technical Specifications -->
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Technical Specifications</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-lg font-medium mb-2">Dataset</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>3000+ qualitative research samples</li>
+                                <li>6 different research designs</li>
+                                <li>11 different parameters</li>
+                                <li>95th percentile data cleaning</li>
+                                <li>Balanced dataset (n=500 per design)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-medium mb-2">Model Architecture</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Ensemble Learning Model</li>
+                                <li>Different Machine Learning</li>
+                                <li>Different meta-models</li>
+                                <li>Cross-validation (k=5)</li>
+                                <li>85% R² Score (Coefficient of Determination)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Designs -->
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Research Designs</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li><strong>Narrative Research:</strong> Focus on storytelling</li>
+                                <li><strong>Ethnographic Research:</strong> Cultural analysis</li>
+                                <li><strong>Phenomenology:</strong> Experience analysis</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li><strong>Grounded Theory:</strong> Theory development</li>
+                                <li><strong>Case Study:</strong> In-depth examination</li>
+                                <li><strong>Other Designs:</strong> Mixed approaches</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model Performance (Detailed) -->
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Model Performance (Detailed)</h4>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full border-collapse border border-gray-300 text-center">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="border border-gray-300 p-2">Model</th>
+                                    <th class="border border-gray-300 p-2">Test R² (Avg.)</th>
+                                    <th class="border border-gray-300 p-2">Train R² (Avg.)</th>
+                                    <th class="border border-gray-300 p-2">Test MAE (Avg.)</th>
+                                    <th class="border border-gray-300 p-2">Best Params</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="font-bold bg-blue-50">
+                                    <td class="border border-gray-300 p-2">KNeighbors</td>
+                                    <td class="border border-gray-300 p-2">0.852742</td>
+                                    <td class="border border-gray-300 p-2">0.909446</td>
+                                    <td class="border border-gray-300 p-2">0.151285</td>
+                                    <td class="border border-gray-300 p-2 text-left text-xs">
+                                        {'model__n_neighbors': 15, 'model__p': 1, 'model__weights': 'distance'}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">GradientBoosting</td>
+                                    <td class="border border-gray-300 p-2">0.852534</td>
+                                    <td class="border border-gray-300 p-2">0.907133</td>
+                                    <td class="border border-gray-300 p-2">0.175680</td>
+                                    <td class="border border-gray-300 p-2 text-left text-xs">
+                                        {'learning_rate': 0.1, 'loss': 'squared_error', 'max_depth': 7, 'n_estimators':
+                                        200, 'subsample': 0.8}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">RandomForest</td>
+                                    <td class="border border-gray-300 p-2">0.852449</td>
+                                    <td class="border border-gray-300 p-2">0.905714</td>
+                                    <td class="border border-gray-300 p-2">0.183468</td>
+                                    <td class="border border-gray-300 p-2 text-left text-xs">
+                                        {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1,
+                                        'min_samples_split': 2, 'n_estimators': 200}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">XGBoost</td>
+                                    <td class="border border-gray-300 p-2">0.849898</td>
+                                    <td class="border border-gray-300 p-2">0.904114</td>
+                                    <td class="border border-gray-300 p-2">0.186369</td>
+                                    <td class="border border-gray-300 p-2 text-left text-xs">
+                                        {'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': 7, 'n_estimators':
+                                        200, 'reg_alpha': 0, 'reg_lambda': 1.5, 'subsample': 0.8}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">DecisionTree</td>
+                                    <td class="border border-gray-300 p-2">0.845724</td>
+                                    <td class="border border-gray-300 p-2">0.912250</td>
+                                    <td class="border border-gray-300 p-2">0.147432</td>
+                                    <td class="border border-gray-300 p-2 text-left text-xs">
+                                        {'criterion': 'squared_error', 'max_depth': None, 'max_features': 'sqrt',
+                                        'min_samples_leaf': 1, 'min_samples_split': 2}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">SVR</td>
+                                    <td class="border border-gray-300 p-2">0.763296</td>
+                                    <td class="border border-gray-300 p-2">0.849767</td>
+                                    <td class="border border-gray-300 p-2">0.263101</td>
+                                    <td class="border border-gray-300 p-2 text-left text-xs">
+                                        {'model__C': 10.0, 'model__degree': 2, 'model__gamma': 'scale', 'model__kernel':
+                                        'rbf'}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">MLP</td>
+                                    <td class="border border-gray-300 p-2">0.685608</td>
+                                    <td class="border border-gray-300 p-2">0.779126</td>
+                                    <td class="border border-gray-300 p-2">0.370804</td>
+                                    <td class="border border-gray-300 p-2 text-left text-xs">
+                                        {'activation': 'logistic', 'alpha': 0.01, 'early_stopping': True,
+                                        'hidden_layer_sizes': (30,), 'learning_rate': 'constant', 'solver': 'lbfgs'}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">AdaBoost</td>
+                                    <td class="border border-gray-300 p-2">0.423281</td>
+                                    <td class="border border-gray-300 p-2">0.438722</td>
+                                    <td class="border border-gray-300 p-2">0.586717</td>
+                                    <td class="border border-gray-300 p-2 text-left text-xs">
+                                        {'learning_rate': 0.05, 'loss': 'square', 'n_estimators': 100}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">Ridge</td>
+                                    <td class="border border-gray-300 p-2">0.391545</td>
+                                    <td class="border border-gray-300 p-2">0.400687</td>
+                                    <td class="border border-gray-300 p-2">0.575250</td>
+                                    <td class="border border-gray-300 p-2 text-left text-xs">
+                                        {'model__alpha': 50.0}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <!-- User Guide (Corrected to match index.html) -->
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">User Guide</h4>
+                    <ol class="list-decimal list-inside text-gray-700 space-y-1">
+                        <li><strong>Select Data Quality:</strong> Choose the expected quality of your data.</li>
+                        <li><strong>Select Information Power:</strong> Assess the knowledge level of your participants.
+                        </li>
+                        <li><strong>Select Homogeneity/Heterogeneity:</strong> Define if your group is similar or
+                            diverse.</li>
+                        <li><strong>Select Number of Interviews:</strong> Specify the number of interviews per
+                            participant.</li>
+                        <li><strong>Select Researcher Competence:</strong> Rate the researcher's experience level.</li>
+                        <li><strong>Select Research Scope:</strong> Define if the scope is narrow or broad.</li>
+                        <li><strong>Select Data Diversity (Triangulation):</strong> Assess the diversity of your data
+                            sources.</li>
+                        <li><strong>Select Participant Originality:</strong> Rate the originality of participant
+                            insights.</li>
+                        <li><strong>Select Interview Duration:</strong> Specify the average length of the interviews.
+                        </li>
+                        <li><strong>Get Prediction:</strong> Click "Predict Sample Size" to see the results.</li>
+                    </ol>
+                </div>
+
+                <!-- Important Warnings -->
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Important Warnings</h4>
+                    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded-md" role="alert">
+                        <h5 class="font-bold">Points to Consider</h5>
+                        <ul class="list-disc list-inside mt-2">
+                            <li>Prediction results are for guidance and are not absolute values.</li>
+                            <li>You can make adjustments based on your research topic and methodology.</li>
+                            <li>Consider data saturation criteria.</li>
+                            <li>Don't forget to get expert opinions and conduct a literature review.</li>
+                            <li>Do not neglect to obtain ethics committee approval and necessary permissions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Technical Details (Corrected) -->
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Technical Details</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-lg font-medium mb-2">Technologies Used</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Python 3.10+</li>
+                                <li>Scikit-learn</li>
+                                <li>Pandas & NumPy</li>
+                                <li>Flask Web Framework</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <!-- Corrected based on the model list from index.html results -->
+                            <h5 class="text-lg font-medium mb-2">Model Algorithms</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Ridge Regression</li>
+                                <li>K-Nearest Neighbors (KNeighbors)</li>
+                                <li>Support Vector Regression (SVR)</li>
+                                <li>Decision Tree</li>
+                                <li>Random Forest</li>
+                                <li>Gradient Boosting</li>
+                                <li>AdaBoost</li>
+                                <li>Neural Network (MLP)</li>
+                                <li>XGBoost</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back Button -->
+                <div class="text-center mt-8">
+                    <a href="{{ url_for('index') }}"
+                        class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition text-lg font-medium">
+                        ← Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h5 class="font-semibold">Qualitative Research Sample Prediction System</h5>
+            <p class="text-sm text-gray-400">AI-powered scientific research tool</p>
+            <p class="text-sm text-gray-500 mt-2">&copy; 2025 All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
