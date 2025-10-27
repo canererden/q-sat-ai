@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="static/logo.svg" alt="Q-Sat AI Logo" width="50%" style="transition: transform 0.6s; hover:transform:rotate(10deg);">
+  <img src="static/logo.svg" alt="Q-Sat AI Logo" width="50%">
 </p>
 
 <h1 align="center">Q-Sat AI</h1>
@@ -16,59 +16,45 @@
 
 ---
 
-## About
+## TÜBİTAK Project
+
+This web application is a scientific output of a **TÜBİTAK-funded research project** conducted under the ARDEB program (**Project Code: 124K233**). The project is led by **Dr. Hasan TUTAR** and aims to develop intelligent tools that support methodological decisions in qualitative research.
+
+---
+
+## About Q-Sat AI
 
 Determining sample size in qualitative research often relies on **subjective criteria** such as data saturation.  
 **Q-Sat AI** introduces a **data-driven, machine learning-based decision support system** to estimate optimal sample sizes objectively — without compromising the interpretive nature of qualitative inquiry.
 
 **Purpose:**  
-Q-Sat AI is an AI-powered tool that guides researchers in selecting sample sizes using advanced machine learning models trained on **3000+ qualitative research data points**.
+Q-Sat AI (Qualitative Data Saturation Estimation using AI) guides researchers in selecting sample sizes using advanced machine learning models trained on **3000+ qualitative research data points**.
 
 ---
 
 ## 📊 Technical Specifications
 
-### Dataset
-- 3000+ qualitative research samples  
-- 6 different research designs  
-- 11 different parameters  
-- 95th percentile data cleaning  
-- Balanced dataset (~500 samples per design)  
+| Dataset | Model Architecture | Research Designs |
+|---------|-----------------|-----------------|
+| - 3000+ qualitative research samples<br>- 6 research designs<br>- 11 parameters<br>- 95th percentile cleaning<br>- Balanced (~500 per design) | - Ensemble Learning Models<br>- Multiple ML & meta-models<br>- Cross-validation (k=5)<br>- Avg. R² Score: 85% | - Narrative Research<br>- Ethnographic Research<br>- Phenomenology<br>- Grounded Theory<br>- Case Study<br>- Other Mixed Designs |
 
-### Model Architecture
-- Ensemble Learning Models  
-- Multiple Machine Learning & meta-models  
-- Cross-validation (k=5)  
-- Average R² Score: 85%  
 
 ---
 
-## 🧪 Research Designs Supported
+## 📈 Model Performances
 
-| Design | Description |
-|--------|-------------|
-| **Narrative Research** | Focus on storytelling |
-| **Ethnographic Research** | Cultural analysis |
-| **Phenomenology** | Experience analysis |
-| **Grounded Theory** | Theory development |
-| **Case Study** | In-depth examination |
-| **Other Designs** | Mixed approaches |
+| Model | Test R² Badge |
+|-------|---------------|
+| **KNeighbors** | ![badge](https://img.shields.io/badge/R²-0.853-brightgreen) |
+| **GradientBoosting** | ![badge](https://img.shields.io/badge/R²-0.853-brightgreen) |
+| **RandomForest** | ![badge](https://img.shields.io/badge/R²-0.852-brightgreen) |
+| **XGBoost** | ![badge](https://img.shields.io/badge/R²-0.850-green) |
+| **DecisionTree** | ![badge](https://img.shields.io/badge/R²-0.846-yellowgreen) |
+| **SVR** | ![badge](https://img.shields.io/badge/R²-0.763-yellow) |
+| **MLP** | ![badge](https://img.shields.io/badge/R²-0.686-orange) |
+| **AdaBoost** | ![badge](https://img.shields.io/badge/R²-0.423-red) |
+| **Ridge** | ![badge](https://img.shields.io/badge/R²-0.392-red) |
 
----
-
-## 📈 Model Performance (Detailed)
-
-| Model | Test R² | Badge |
-|-------|:-------:|:-----:|
-| **KNeighbors** | 0.853 | ![badge](https://img.shields.io/badge/R²-0.853-brightgreen) |
-| **GradientBoosting** | 0.853 | ![badge](https://img.shields.io/badge/R²-0.853-brightgreen) |
-| **RandomForest** | 0.852 | ![badge](https://img.shields.io/badge/R²-0.852-brightgreen) |
-| **XGBoost** | 0.850 | ![badge](https://img.shields.io/badge/R²-0.850-green) |
-| **DecisionTree** | 0.846 | ![badge](https://img.shields.io/badge/R²-0.846-yellowgreen) |
-| **SVR** | 0.763 | ![badge](https://img.shields.io/badge/R²-0.763-yellow) |
-| **MLP** | 0.686 | ![badge](https://img.shields.io/badge/R²-0.686-orange) |
-| **AdaBoost** | 0.423 | ![badge](https://img.shields.io/badge/R²-0.423-red) |
-| **Ridge** | 0.392 | ![badge](https://img.shields.io/badge/R²-0.392-red) |
 
 ---
 
@@ -99,23 +85,17 @@ Q-Sat AI is an AI-powered tool that guides researchers in selecting sample sizes
 
 ## 💻 Technical Details
 
-### Technologies
-- Python 3.10+  
-- Scikit-learn  
-- Pandas & NumPy  
-- Flask  
-- Tailwind CSS  
-
-### Algorithms Used
-- Ridge Regression  
-- K-Nearest Neighbors (KNN)  
-- Support Vector Regression (SVR)  
-- Decision Tree  
-- Random Forest  
-- Gradient Boosting  
-- AdaBoost  
-- Neural Network (MLP)  
-- XGBoost  
+| Technologies | Algorithms Used |
+|--------------|----------------|
+| Python 3.10+ | Ridge Regression |
+| Scikit-learn | K-Nearest Neighbors (KNN) |
+| Pandas & NumPy | Support Vector Regression (SVR) |
+| Flask | Decision Tree |
+| Railway | Random Forest |
+|  | Gradient Boosting |
+|  | AdaBoost |
+|  | Neural Network (MLP) |
+|  | XGBoost |
 
 ---
 
@@ -123,3 +103,4 @@ Q-Sat AI is an AI-powered tool that guides researchers in selecting sample sizes
 
 This project is licensed under the **MIT License**.  
 See [LICENSE](LICENSE) for details.
+
