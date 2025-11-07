@@ -33,8 +33,8 @@ If you use **Q-Sat AI** in your research or publications, please cite it as foll
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2511.01935}, 
 }
+```
 
-[![arXiv](https://img.shields.io/badge/arXiv-2511.01935-b31b1b?style=for-the-badge&logo=arxiv)](https://arxiv.org/abs/2511.01935)
 
 ## TÜBİTAK Project
 
