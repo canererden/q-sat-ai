@@ -19,6 +19,23 @@
 
 ---
 
+## 📚 Citation
+
+If you use **Q-Sat AI** in your research or publications, please cite it as follows:
+
+```bibtex
+@misc{tutar2025qsataimachinelearningbased,
+      title={Q-Sat AI: Machine Learning-Based Decision Support for Data Saturation in Qualitative Studies}, 
+      author={Hasan Tutar and Caner Erden and Ümit Şentürk},
+      year={2025},
+      eprint={2511.01935},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2511.01935}, 
+}
+
+[![arXiv](https://img.shields.io/badge/arXiv-2511.01935-b31b1b?style=for-the-badge&logo=arxiv)](https://arxiv.org/abs/2511.01935)
+
 ## TÜBİTAK Project
 
 This web application is a scientific output of a **TÜBİTAK-funded research project** conducted under the ARDEB program (**Project Code: 124K233**). The project is led by **Dr. Hasan TUTAR** and aims to develop intelligent tools that support methodological decisions in qualitative research.
